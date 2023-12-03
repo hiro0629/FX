@@ -4,7 +4,7 @@ import datetime
 import random
 
 class Broker():
-    market_ls = []:
+    market_ls = []
     spread = 0.0018
     def __init__(self):
         self.dt = datetime.datetime.now().replace(microsecond=0)
@@ -19,7 +19,7 @@ class Broker():
         for i in range(self.date_qty):
             print("")
         # 資産評価額、預託金残高、証拠金維持率、損益評価額、最大建玉可能数量
-        # 
+        # Equity, 
             Broker.market_ls[i].show_info()    
             while True:
                 ans=input("Input command!\nNot order:0\tBID ORDER:1\tASK ORDER:2\n")
